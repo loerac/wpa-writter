@@ -6,9 +6,11 @@ It is recommend that you'll add a space before running the script so command doe
 Example:
 ====================================
 $ ./wpa.sh -u ssid_name 'ssid_password'
+
 $ ./wpa.sh -h ssid_name 'ssid_password'
 
 Commands:
 ====================================
 -u: Writes to wpa_supplicant.conf for university
+
 -h: Writes to wpa_supplicant.conf for home
