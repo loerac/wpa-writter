@@ -5,4 +5,3 @@ It is recommend that you'll add a space before running the script so command doe
 
 Example:
 $ ./wpa.sh ssid_name 'ssid_password'
- ^ notice the space
