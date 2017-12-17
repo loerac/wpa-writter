@@ -7,11 +7,11 @@ Example:
 ====================================
 $ ./wpa.sh -u ssid_name 'ssid_password'
 
- ^ There's a space between the "$" and the "."
+  ^ There's a space between the "$" and the "."
 
 $ ./wpa.sh -h ssid_name 'ssid_password'
 
-  ^ There's a space between the "$" and the "."
+   ^ There's a space between the "$" and the "."
 
 Commands:
 ====================================
