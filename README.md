@@ -9,6 +9,6 @@ Commands:
 
 Example:
 =
-$ ./wpa.sh -u ssid_name 'ssid_password'
+$ ./wpa.sh ssid_name 'ssid_password' -u
 
   ^ There's a space between the "$" and the "."
