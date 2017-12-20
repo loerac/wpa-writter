@@ -7,8 +7,6 @@ Commands:
 =
 -u: Writes to wpa_supplicant.conf for university
 
--h: Writes to wpa_supplicant.conf for home
-
 Example:
 =
 $ ./wpa.sh -u ssid_name 'ssid_password'
