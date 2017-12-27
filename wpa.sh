@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# Setting the type of WPA that'll be used
-# u: univeristy/school
-# h: home
-
 # Takes in two arguements; name of SSID and the password
 name="\"$1\""
 password="\"$2\""
@@ -40,4 +36,3 @@ else
 fi
 
 echo "}" | sudo tee -a  /etc/wpa_supplicant/wpa_supplicant.conf
-echo "Complete"
