@@ -25,7 +25,8 @@ if [ "$3" != "" ]; then
 		echo -e ' \t'auth_alg=OPEN | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf
 		echo -e ' \t'eap=PEAP | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf
 		echo -e ' \t'identity=$name | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf
-		echo -e ' \t'password=$password | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf
+		echo -e ' \t'password=$password | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf > /dev/null
+		echo -e ' \t'password=NULL
 		echo -e ' \t'phase1=\"peaplabel=0\" | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf
 		echo -e ' \t'phase2=\"auth=MSCHAPV2\" | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf
 	else
@@ -34,7 +35,9 @@ if [ "$3" != "" ]; then
 	fi
 else
 	echo -e ' \t'ssid=$name | sudo tee -a  /etc/wpa_supplicant/wpa_supplicant.conf
-	echo -e ' \t'psk=$password | sudo tee -a  /etc/wpa_supplicant/wpa_supplicant.conf
+	echo -e ' \t'psk=$password | sudo tee -a  /etc/wpa_supplicant/wpa_supplicant.conf > /dev/null
+	echo -e ' \t'password=NULL
 fi
 
 echo "}" | sudo tee -a  /etc/wpa_supplicant/wpa_supplicant.conf
+echo "Complete"
