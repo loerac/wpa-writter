@@ -7,6 +7,6 @@ It is recommended that you add a space before running the script so the command 
 -u: Writes to wpa_supplicant.conf for university
 
 ### Example:
-$ ./wpa.sh ssid_name 'ssid_password' -u
+$ ./wpa.sh [ssid_name] '[ssid_password]' -u
 
   ^ There's a space between the "$" and the "."
