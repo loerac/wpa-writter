@@ -48,4 +48,4 @@ fi
 echo "}" | sudo tee -a  /etc/wpa_supplicant/wpa_supplicant.conf
 clear
 echo "Complete"
-echo "Shutdown Pi to connect $ssid"
+echo "Shutdown the Raspberry Pi to connect to $ssid"
