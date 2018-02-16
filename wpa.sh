@@ -15,7 +15,7 @@ if [ "$3" != "" ]; then
 			echo "network={" | sudo tee -a  /etc/wpa_supplicant/wpa_supplicant.conf
 
 			# '-e ' \t'' is used to add a tab space
-			echo -e ' \t'ssid=\"$ssid\" | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf
+			echo -e ' \t'ssid=$ssid | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf
 			echo -e ' \t'priority=1 | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf
 			echo -e ' \t'proto=RSN | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf
 			echo -e ' \t'key_mgmt=WPA-EAP | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf
