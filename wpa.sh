@@ -7,7 +7,7 @@ password="\"$2\""
 if [ "$3" != "" ]; then
 	if [ "$4" != "" ]; then
 		type=${3:1}
-		name=$4
+		name="\"$4\""
 		if [ "$type" == "u" ]; then
 			## In order to echo anything to the wpa_supplicant.conf file, you'll need sudo
 			## the 'sudo tee -a ' will append the the end of the file with permission
